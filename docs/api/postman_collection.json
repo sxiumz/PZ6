@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "12345-6789",
+		"name": "PZ6 Node API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["users"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Student\"}",
+					"options": {
+						"raw": { "language": "json" }
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["users"]
+				}
+			},
+			"response": []
+		}
+	]
+}
